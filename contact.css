@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet');
+
+:root {
+  --dominant-color: #7126EE;
+  --black: #000000;
+  --white: #ffffff;
+  --accent-color: #907FFC;
+  --grey: #00000080;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font-family: 'Inter';
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+}
+
+
+/* HEADER SECTION STARTS */
+
+
+/* HEADER SECTION ENDS */
+
+
+
+
+/* HOME SECTION STARTS */
+
+.home {
+  background-color: var(--dominant-color);
+  height: 372px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-position: center;
+}
+
+#home h3 {
+  color: var(--white);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 60px;
+  letter-spacing: -0.01em;
+}
+
+#home p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.001em;
+  color: var(--white);
+  font-style: normal;
+}
+
+
+/* HOME SECTION ENDS */
+
+
+
+
+/* CONTACT SECTION STARTS */
+
+
+#Contact_form {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.001em;
+  color: var(--black);
+
+}
+
+#inputdetails {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.001em;
+  color: var(--grey);
+  font-style: normal;
+}
+
+#Form_btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--white);
+  background-color: var(--dominant-color);
+}
+
+#contact_right p {
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.001em;
+  color: var(--grey);
+}
+
+#contact_right h6 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.001em;
+  color: var(--black);
+}
+
+#M_number {
+  line-height: 2px;
+}
+
+#E_mail {
+  line-height: 5px;
+}
+
+#Icons {
+  word-spacing: 10px;
+}
+
+
+
+/* CONTACT SECTION ENDS */
+
+
+
+
+/* FOOTER SECTION STARTS */
+
+
+/* FOOTER SECTION ENDS */
+
+
+/* ---- MEDIA QUERY ----  */
+
+
+
+@media (max-width: 767px) {
+  .home {
+    height: 372px;
+  }
+
+  #home h3 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+  }
+
+  #home p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.001em;
+  }
+
+  #M_number {
+    line-height: 20px;
+  }
+}
+
+
+
+
