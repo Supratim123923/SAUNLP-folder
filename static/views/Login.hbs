@@ -46,7 +46,7 @@
             alt=""
             src="../public/login-image@2x.png"
           />
-          <form class="login-form">
+          <form class="login-form" method="post">
             <div class="heading24">Welcome back!</div>
             <button class="google-button1" id="googleButton">
               <img class="logo-icon1" alt="" src="../public/logo1.svg" />
@@ -72,6 +72,7 @@
                   class="input-box2"
                   type="email"
                   placeholder="Insert your email"
+                  name="email"
                   required
                 />
               </div>
@@ -81,6 +82,7 @@
                   class="input-box3"
                   type="password"
                   placeholder="Insert your password"
+                  name="password"
                   required
                 />
               </div>
@@ -144,12 +146,12 @@
         });
       }
       
-      var signinButton = document.getElementById("signinButton");
+     /* var signinButton = document.getElementById("signinButton");
       if (signinButton) {
         signinButton.addEventListener("click", function () {
           window.location.href = "Error";
         });
-      }
+      }*/
       
       var cancelButton = document.getElementById("cancelButton");
       if (cancelButton) {

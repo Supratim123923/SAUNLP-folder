@@ -12,6 +12,11 @@
   </head>
   <body>
     <div class="register">
+      {{#if message}}
+            <div class="alert {{messageClass}}" role="alert">
+                {{message}}
+            </div>
+        {{/if}}
       <nav class="navbar1">
         <div class="internal-nav1">
           <div class="links3">
@@ -41,7 +46,7 @@
       </nav>
       <main class="main">
         <div class="inner-main">
-          <form class="register-form">
+          <form class="register-form" method="post">
             <div class="heading23">Join Us!</div>
             <button class="google-button" id="googleButton">
               <img class="logo-icon" alt="" src="../public/logo.svg" />
@@ -67,6 +72,7 @@
                   class="input-box"
                   type="email"
                   placeholder="Insert your email"
+                  name="email"
                   required
                 />
               </div>
@@ -76,6 +82,7 @@
                   class="input-box1"
                   type="password"
                   placeholder="Insert your password"
+                  name="password"
                   required
                 />
               </div>
@@ -130,12 +137,12 @@
         });
       }
       
-      var signupButton = document.getElementById("signupButton");
+      /*var signupButton = document.getElementById("signupButton");
       if (signupButton) {
         signupButton.addEventListener("click", function () {
           window.location.href = "Error";
         });
-      }
+      }*/
       
       var cancelButton = document.getElementById("cancelButton");
       if (cancelButton) {
